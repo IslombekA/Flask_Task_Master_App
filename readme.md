@@ -13,16 +13,16 @@ A basic web application demonstrating CRUD operations using the Flask framework.
 ## Description
 
 ### Settting up the environment
--Install Flask and other dependencies using pip3 install flask flask_sqlalchemy.
+- Install Flask and other dependencies using pip3 install flask flask_sqlalchemy.
 
 ### Application structure
--app.py: The main application file containing the Flask app and routes.
+- app.py: The main application file containing the Flask app and routes.
 
--templates/: Directory containing HTML templates for rendering pages.
+- templates/: Directory containing HTML templates for rendering pages.
 
--static/: Directory for static files like CSS.
+- static/: Directory for static files like CSS.
 
--text.db: SQLite database file.
+- text.db: SQLite database file.
 
 ## Details
 
@@ -34,12 +34,11 @@ class Todo(db.Model):
     completed = db.Column(db.Integer, default = 0)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
     
-    
     def __repr__(self):
         return '<task %r>' % self.id
 ```
 
-### Create and Read
+### Create and Read a task
 ```python
 @app.route('/', methods = ['POST', 'GET'])
 def index():
@@ -58,7 +57,7 @@ def index():
         return render_template('index.html', tasks=tasks)
 ```
 
-### Update
+### Update a task
 ```python
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
@@ -77,7 +76,7 @@ def update(id):
         return render_template('update.html', task=task)
 ```
 
-### Delete
+### Delete a task
 ```python
 @app.route('/delete/<int:id>')
 def delete(id):
