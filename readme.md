@@ -22,7 +22,7 @@ A basic web application demonstrating CRUD operations using the Flask framework.
 
 - static/: Directory for static files like CSS.
 
-- text.db: SQLite database file.
+- instance/text.db: SQLite database file.
 
 ## Details
 
