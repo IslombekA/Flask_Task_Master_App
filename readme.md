@@ -90,4 +90,4 @@ def delete(id):
         return 'There was an issue trying to delete that task'
 ```
 ## Conclusion
-This CRUD application provides a foundational understanding of how to manage data using Flask and SQLite.It can be expanded with additional features such as user authentication, more complex data models, and integration with other databases like PostgreSQL or MySQL.
+This CRUD application provides a foundational understanding of how to manage data using Flask and SQLite. It can be expanded with additional features such as user authentication, more complex data models, and integration with other databases like PostgreSQL or MySQL.
