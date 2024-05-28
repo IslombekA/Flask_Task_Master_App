@@ -38,7 +38,7 @@ class Todo(db.Model):
         return '<task %r>' % self.id
 ```
 
-### Create and Read a task
+### Create a task
 ```python
 @app.route('/', methods = ['POST', 'GET'])
 def index():
